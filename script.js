@@ -21,9 +21,8 @@ middle.addEventListener("click", async()=>{
   let real = document.querySelector("#real");
   let dolar = parseFloat(document.querySelector("#dolar").value);
 
-  real.value = dolar * valor;
+  real.value = dolar.toFixed(2) * valor.toFixed(2);
   console.log(real);
-
 
 })
 
