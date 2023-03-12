@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora De Investimentos</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h4>calculadoras</h4></a>
+        
+        <div class="tags-links">
+          <ul>
+            <a href="index.html"> <li>home</li></a>
+            <a href="index.html"> <li>Calculadora Renda Fixa</li></a>
+            <a href="independencia.html"> <li>independencia <br> financeira</li></a>
+            <a href="dolar.html"> <li>conversor de moedas</li></a>
+            <a href="criptos.html"> <li>cotação cripto</li></a>
+          </ul>
+        </div>
+        
+    </header>
+
+    <div class="container">
+        <h1>Calculadora de Renda Fixa</h1>
+        <form class="form">
+          <div class="form-group">
+            <label for="valor-inicial">Valor Inicial:</label>
+            <input type="number" id="valor-inicial" required>
+          </div>
+          <div class="form-group">
+            <label for="taxa-juros">Taxa de Juros (%):</label>
+            <input type="text" id="taxa-juros" required readonly placeholder="13,65">
+          </div>
+          <div class="form-group">
+            <label for="periodo">Período (meses):</label>
+            <input type="number" id="periodo" required>
+          </div>
+      
+          <button type="button" id="calcular">Calcular</button>
+
+          <div id="todo-resultado">
+            
+          </div>
+        </form>
+    </div>
+
+    
+    <script src="teste.js"></script>
+</body>
+</html>
