@@ -21,7 +21,8 @@ middle.addEventListener("click", async()=>{
   let real = document.querySelector("#real");
   let dolar = parseFloat(document.querySelector("#dolar").value);
 
-  if(dolar == ""){
+  if(dolar === ""){
+    alert("Eu sou um alert!");
    return alert("insira algum valor, obs: use pontos ex: 5.58");
   }
 
