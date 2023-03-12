@@ -16,12 +16,12 @@ middle.addEventListener("click", async()=>{
 
   const result = await getFinance();
   console.log(`${JSON.stringify(result.USD.buy, undefined,2)}`);
-  let valor = `${JSON.stringify(result.USD.buy, undefined,2)}`
+  let valor = parseFloat(`${JSON.stringify(result.USD.buy, undefined,2)}`);
   console.log("clicou");
-  let real = document.querySelector("#real").value;
+  let real = parseFloat(document.querySelector("#real").value);
 
-  real.value = real * parseFloat(valor);
-  console.log(real.value);
+  real = real * valor;
+  console.log(real);
 
 
 })
