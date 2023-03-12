@@ -99,11 +99,9 @@ const options = {
 const chart = new ApexCharts(document.querySelector("#chart"), options)
 chart.render()
 
-const url = "https://api.hgbrasil.com/finance/quotations?format=json-cors&key=2fbecdab";
-
 function getFinance(){
 
-  const result  = fetch(url)
+  const result  = fetch("https://api.hgbrasil.com/finance/quotations?format=json-cors&key=2fbecdab")
   .then((res)  => res.json())
   .then((data) => {
      return (data.results.currencies);
