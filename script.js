@@ -21,6 +21,10 @@ middle.addEventListener("click", async()=>{
   let real = document.querySelector("#real");
   let dolar = parseFloat(document.querySelector("#dolar").value);
 
+  if(dolar == ""){
+   return alert("insira algum valor, obs: use pontos ex: 5.58");
+  }
+
   let resuReal = dolar * valor;
   real.value = resuReal.toFixed(2);
   console.log(real);
